@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [AppTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.app.InfluxDB.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" name="Demo Test cases(failed)">
     <classes>
       <class name="com.app.testcases.SignInSky">
         <methods>
+          <include name="clickSign"/>
           <include name="initialization"/>
           <include name="setup"/>
           <include name="teardown"/>
           <include name="inputDataToField" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="nextsteps"/>
         </methods>
       </class> <!-- com.app.testcases.SignInSky -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Demo Test cases(failed) -->
+</suite> <!-- Failed suite [AppTestSuite] -->

@@ -55,7 +55,7 @@ public class TestBase {
 		try {
 
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("/Applications/workspace/Framework/src/main/java/com/app" + "/config/config.properties");
+			FileInputStream ip = new FileInputStream("/Users/anupmohan/TUtilities/workspace/Framework/src/main/java/com/app" + "/config/config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
@@ -66,7 +66,7 @@ public class TestBase {
 		try {
 
 			andprop = new Properties();
-			FileInputStream andip = new FileInputStream("/Applications/workspace/Framework/src/main/java/com/app" + "/android/android.properties");
+			FileInputStream andip = new FileInputStream("/Users/anupmohan/TUtilities/workspace/Framework/src/main/java/com/app" + "/android/android.properties");
 			andprop.load(andip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
@@ -77,7 +77,7 @@ public class TestBase {
 		try {
 
 			iosprop = new Properties();
-			FileInputStream iosip = new FileInputStream("/Applications/workspace/Framework/src/main/java/com/app" + "/ios/ios.properties");
+			FileInputStream iosip = new FileInputStream("/Users/anupmohan/TUtilities/workspace/Framework/src/main/java/com/app" + "/ios/ios.properties");
 			iosprop.load(iosip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();

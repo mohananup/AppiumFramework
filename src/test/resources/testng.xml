@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FREE CRM Application Test Automation Test Suite">
+<suite name="AppTestSuite">
 
 	<listeners>
-		<listener class-name="com.app.ExtentReports.ExtentITestListenerClassAdapter" />
+		<listener class-name="com.app.InfluxDB.ExecutionListener" />
 	</listeners>
 
 
-	<test name="Free CRM App Test Cases">
+	<test name="Demo Test cases">
 		<classes>
-			<class name="com.crm.qa.testcases.LoginPageTest"></class>
-			<class name="com.crm.qa.testcases.HomePageTest"></class>
-			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
-
+			<class name="com.app.testcases.SignInSky"></class>
 		</classes>
 	</test>
-</suite>
+</suite>  

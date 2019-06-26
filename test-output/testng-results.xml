@@ -1,96 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="1" failed="7" skipped="0">
+<testng-results ignored="1" total="8" passed="0" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-23T11:25:21Z" name="Default suite" finished-at="2019-06-23T11:28:14Z" duration-ms="173214">
+  <suite started-at="2019-06-25T03:30:45Z" name="AppTestSuite" finished-at="2019-06-25T03:32:32Z" duration-ms="106546">
     <groups>
     </groups>
-    <test started-at="2019-06-23T11:25:21Z" name="Default test" finished-at="2019-06-23T11:28:14Z" duration-ms="173214">
+    <test started-at="2019-06-25T03:30:45Z" name="Demo Test cases" finished-at="2019-06-25T03:32:32Z" duration-ms="106546">
       <class name="com.app.testcases.SignInSky">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:25:21Z" name="initialization" finished-at="2019-06-23T11:25:39Z" duration-ms="18223" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:30:45Z" name="initialization" finished-at="2019-06-25T03:31:06Z" duration-ms="20541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:25:39Z" name="setup" finished-at="2019-06-23T11:25:39Z" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:06Z" name="setup" finished-at="2019-06-25T03:31:06Z" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickSign()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:25:39Z" name="clickSign" finished-at="2019-06-23T11:25:58Z" duration-ms="18698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSign -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:25:59Z" name="setup" finished-at="2019-06-23T11:25:59Z" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:25:59Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:26:55Z" duration-ms="55691" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Quentin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tarantino]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[QT@am,.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Am12345]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="clickSign()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:06Z" name="clickSign" description=" launch and sign in" finished-at="2019-06-25T03:31:17Z" duration-ms="10914" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[UiSelector[INSTANCE=0, RESOURCE_ID=com.bskyb.skyservice:id/signup_password_confirmation]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, databaseEnabled: false, desired: {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, deviceName: 05534a8d0a5c92f8, platformName: android, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LGE, deviceModel: Nexus 5, deviceName: 05534a8d0a5c92f8, deviceScreenSize: 1080x1920, deviceUDID: 05534a8d0a5c92f8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: f5970ffc-95e8-4100-ad32-c3ce44a1b364]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/button})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: UiSelector[INSTANCE=0, RESOURCE_ID=com.bskyb.skyservice:id/signup_password_confirmation]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, databaseEnabled: false, desired: {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, deviceName: 05534a8d0a5c92f8, platformName: android, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LGE, deviceModel: Nexus 5, deviceName: 05534a8d0a5c92f8, deviceScreenSize: 1080x1920, deviceUDID: 05534a8d0a5c92f8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: f5970ffc-95e8-4100-ad32-c3ce44a1b364
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-at com.app.pages.UserSignUp.inputfield(UserSignUp.java:61)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/button})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.app.pages.LaunchScreen.clickSignIn(LaunchScreen.java:33)
+at com.app.testcases.SignInSky.clickSign(SignInSky.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,17 +52,138 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5a101b1c (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/button})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSign -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:18Z" name="setup" finished-at="2019-06-25T03:31:18Z" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:18Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:31:29Z" duration-ms="11249" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Quentin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tarantino]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QT@am,.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Am12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4acb2510 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:26:55Z" name="setup" finished-at="2019-06-23T11:26:55Z" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:29Z" name="setup" finished-at="2019-06-25T03:31:30Z" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:26:55Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:27:06Z" duration-ms="11195" status="FAIL">
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:30Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:31:40Z" duration-ms="10447" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -159,7 +216,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
 at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,7 +242,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1846579f (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2a685eba (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -194,7 +251,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -217,11 +274,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:06Z" name="setup" finished-at="2019-06-23T11:27:06Z" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:40Z" name="setup" finished-at="2019-06-25T03:31:40Z" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:06Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:27:18Z" duration-ms="11455" status="FAIL">
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:40Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:31:51Z" duration-ms="10945" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -254,7 +311,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
 at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -280,7 +337,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5ac6c4f2 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@671facee (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -289,7 +346,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -312,11 +369,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:18Z" name="setup" finished-at="2019-06-23T11:27:18Z" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:51Z" name="setup" finished-at="2019-06-25T03:31:51Z" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:18Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:27:29Z" duration-ms="10600" status="FAIL">
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:31:51Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:32:03Z" duration-ms="12253" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -349,7 +406,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
 at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -375,7 +432,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2954b5ea (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5fcfca62 (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -384,7 +441,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -407,11 +464,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:29Z" name="setup" finished-at="2019-06-23T11:27:29Z" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:32:04Z" name="setup" finished-at="2019-06-25T03:32:04Z" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:29Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:27:41Z" duration-ms="12550" status="FAIL">
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:32:04Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:32:15Z" duration-ms="11004" status="FAIL">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -436,7 +493,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
 at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -462,7 +519,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@c2e3264 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2cfa2c4f (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -471,7 +528,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -494,11 +551,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:41Z" name="setup" finished-at="2019-06-23T11:27:42Z" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:32:15Z" name="setup" finished-at="2019-06-25T03:32:15Z" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:42Z" name="inputDataToField" data-provider="dataSheet" finished-at="2019-06-23T11:27:54Z" duration-ms="12097" status="FAIL">
+        <test-method signature="inputDataToField(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:32:15Z" name="inputDataToField" description="Signup method" data-provider="dataSheet" finished-at="2019-06-25T03:32:26Z" duration-ms="11247" status="FAIL">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -523,7 +580,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
 at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:61)
+at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -549,7 +606,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@46a953cf (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5ff2b8ca (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -558,7 +615,7 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElem
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
+System info: host: 'Anups-MacBook-Air.local', ip: '2405:204:5608:baa2:350e:d484:f195:c08e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
 Driver info: driver.version: AndroidDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -581,84 +638,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDataToField -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:54Z" name="setup" finished-at="2019-06-23T11:27:54Z" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="nextsteps()[pri:2, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:27:54Z" name="nextsteps" finished-at="2019-06-23T11:28:07Z" duration-ms="13147" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_confirm_terms_switch})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_confirm_terms_switch})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-at com.app.pages.UserSignUp.acceptsTnC(UserSignUp.java:66)
-at com.app.testcases.SignInSky.nextsteps(SignInSky.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@499ef98e (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_confirm_terms_switch})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Anups-MacBook-Air.local', ip: 'fe80:0:0:0:14c4:60e2:8b08:3e39%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '11.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nextsteps -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.app.testcases.SignInSky@7748410a]" started-at="2019-06-23T11:28:07Z" name="teardown" finished-at="2019-06-23T11:28:14Z" duration-ms="6948" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.app.testcases.SignInSky@757acd7b]" started-at="2019-06-25T03:32:26Z" name="teardown" finished-at="2019-06-25T03:32:32Z" duration-ms="5831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.app.testcases.SignInSky -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Demo Test cases -->
+  </suite> <!-- AppTestSuite -->
 </testng-results>
