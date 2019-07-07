@@ -3,7 +3,7 @@
 <suite name="AppTestSuite">
 
 	<listeners>
-		<listener class-name="com.app.InfluxDB.ExecutionListener" />
+		<listener class-name="com.app.utils.ExecutionListener" />
 	</listeners>
 
 

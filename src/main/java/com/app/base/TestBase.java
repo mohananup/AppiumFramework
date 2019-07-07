@@ -45,10 +45,10 @@ public class TestBase {
 	public static DesiredCapabilities caps;
 	public static WebDriverWait wait;
 	
-	 public static ExtentHtmlReporter htmlReporter;
-	 public static ExtentReports extent;
-	 public static ExtentTest test;
-	
+//	 public static ExtentHtmlReporter htmlReporter;
+//	 public static ExtentReports extent;
+//	 public static ExtentTest test;
+//	
 
 	public TestBase() {
 
@@ -126,20 +126,20 @@ public class TestBase {
 		}
 		
 		
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/myReport.html");
-
-		  htmlReporter.config().setDocumentTitle("Automation Report"); // Tile of report
-		  htmlReporter.config().setReportName("Functional Testing"); // Name of the report
-		  htmlReporter.config().setTheme(Theme.DARK);
-		  
-		  extent = new ExtentReports();
-		  extent.attachReporter(htmlReporter);
-		  
-		  // Passing General information
-		  extent.setSystemInfo("Host name", "localhost");
-		  extent.setSystemInfo("Environemnt", "QA");
-		  extent.setSystemInfo("user", "anup");
-		
+//		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/myReport.html");
+//
+//		  htmlReporter.config().setDocumentTitle("Automation Report"); // Tile of report
+//		  htmlReporter.config().setReportName("Functional Testing"); // Name of the report
+//		  htmlReporter.config().setTheme(Theme.DARK);
+//		  
+//		  extent = new ExtentReports();
+//		  extent.attachReporter(htmlReporter);
+//		  
+//		  // Passing General information
+//		  extent.setSystemInfo("Host name", "localhost");
+//		  extent.setSystemInfo("Environemnt", "QA");
+//		  extent.setSystemInfo("user", "anup");
+//		
 		
 		
 	}catch(IOException e)
@@ -159,7 +159,7 @@ public class TestBase {
 	public static void teardown() {
 		
 		//anddriver.close();
-		extent.flush();
+//		extent.flush();
 		anddriver.closeApp();
 		anddriver.quit();
 		

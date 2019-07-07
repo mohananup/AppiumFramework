@@ -1,6 +1,6 @@
 package com.app.testcases;
 import org.testng.annotations.BeforeMethod;
-import com.app.InfluxDB.*;
+//import com.app.InfluxDB.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -9,7 +9,8 @@ import com.app.base.TestBase;
 import com.app.pages.AppLogin;
 import com.app.pages.LaunchScreen;
 import com.app.pages.UserSignUp;
-import com.app.utils.TestUtils;
+import com.app.utils.*;
+import com.aventstack.extentreports.Status;
 //import com.avenstack.extentreports.ExtentITestListenerClassAdapter;
 
 //@Listeners(ExtentITestListenerClassAdapter.class)
@@ -50,7 +51,8 @@ public class SignInSky extends TestBase{
 
 	@Test(description = " launch and sign in")
 	public void clickSign() {
-        TestBase.test = extent.createTest("clickSign");
+		ExtentTestManager.getTest().log(Status.INFO, "clicksign");
+       // TestBase.test = extent.createTest("clickSign");
 		launchscreen.clickSignIn();
 		applogin.loginToApp();
 
@@ -59,7 +61,8 @@ public class SignInSky extends TestBase{
 
 	@Test(dataProvider = "dataSheet", description = "Signup method")
 	public void inputDataToField(String fn, String ln, String eMail, String pwds) {
-		TestBase.test = extent.createTest("inputDataToField");
+		ExtentTestManager.getTest().log(Status.INFO, "InputDatafield");
+		//TestBase.test = extent.createTest("inputDataToField");
 		usersignup.inputfield(fn, ln, eMail, pwds);
 		usersignup.acceptsTnC();
 		usersignup.clickNext();

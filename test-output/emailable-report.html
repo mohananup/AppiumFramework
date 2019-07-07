@@ -9,26 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">AppTestSuite</th></tr>
-<tr><td><a href="#t0">Demo Test cases</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">106,546</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Demo Test cases</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">6</td><td class="num">275,679</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Demo Test cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">com.app.testcases.SignInSky</td><td><a href="#m0">clickSign</a></td><td rowspan="1">1561433466804</td><td rowspan="1">10914</td></tr><tr class="failedeven"><td><a href="#m1">inputDataToField</a></td><td rowspan="6">1561433524147</td><td rowspan="6">11004</td></tr><tr class="failedeven"><td><a href="#m2">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m3">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m4">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m5">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m6">inputDataToField</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Demo Test cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">com.app.testcases.SignInSky</td><td><a href="#m0">inputDataToField</a></td><td rowspan="6">1562517515084</td><td rowspan="6">49137</td></tr><tr class="failedeven"><td><a href="#m1">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m2">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m3">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m4">inputDataToField</a></td></tr><tr class="failedeven"><td><a href="#m5">inputDataToField</a></td></tr><tr><th colspan="4">Demo Test cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.app.testcases.SignInSky</td><td><a href="#m6">clickSign</a></td><td rowspan="1">1562517481833</td><td rowspan="1">32357</td></tr></tbody>
 </table>
-<h2>Demo Test cases</h2><h3 id="m0">com.app.testcases.SignInSky#clickSign</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/button})
+<h2>Demo Test cases</h2><h3 id="m0">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Quentin</td><td>Tarantino</td><td>QT@am,.com</td><td>Am12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.AccessibilityId: Sign into the My Sky app to manage your account and find help articles})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.app.pages.LaunchScreen.clickSignIn(LaunchScreen.java:33)
-	at com.app.testcases.SignInSky.clickSign(SignInSky.java:54)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5a101b1c (tried for 1 second(s) with 500 milliseconds interval)
+	at com.app.pages.UserSignUp.clickNext(UserSignUp.java:70)
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:68)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3eda0aeb (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
 	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/button})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: Sign into the My Sky app to manage your account and find help articles})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -51,8 +51,8 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
 	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2cfa2c4f (tried for 1 second(s) with 500 milliseconds interval)
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:66)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2643d762 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -61,7 +61,7 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -84,8 +84,8 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
 	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5ff2b8ca (tried for 1 second(s) with 500 milliseconds interval)
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:66)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2127e66e (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -94,7 +94,7 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -112,13 +112,13 @@ Driver info: driver.version: AndroidDriver
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Steven</td><td>Speilberg</td><td>SS@am.com</td><td>Ss12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+<h3 id="m3">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Woody</td><td>Allen</td><td>WA@am.com</td><td>Wa12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
 	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2a685eba (tried for 1 second(s) with 500 milliseconds interval)
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:66)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b1f5012 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -127,7 +127,7 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -145,22 +145,22 @@ Driver info: driver.version: AndroidDriver
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Woody</td><td>Allen</td><td>WA@am.com</td><td>Wa12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+<h3 id="m4">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Steven</td><td>Speilberg</td><td>SS@am.com</td><td>Ss12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.AccessibilityId: Sign into the My Sky app to manage your account and find help articles})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
-	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5fcfca62 (tried for 1 second(s) with 500 milliseconds interval)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.app.pages.UserSignUp.clickNext(UserSignUp.java:70)
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:68)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6944e53e (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
 	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: Sign into the My Sky app to manage your account and find help articles})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -178,71 +178,33 @@ Driver info: driver.version: AndroidDriver
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Quentin</td><td>Tarantino</td><td>QT@am,.com</td><td>Am12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
-	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4acb2510 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
+<h3 id="m5">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Martin</td><td>Scorsese</td><td>MS@am.com</td><td>Ms12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: UiSelector[INSTANCE=0, RESOURCE_ID=com.bskyb.skyservice:id/signup_first_name]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.app.testcases.SignInSky#inputDataToField</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Martin</td><td>Scorsese</td><td>MS@am.com</td><td>Ms12345</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:14c4:60e2:8b08:3e39%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, databaseEnabled: false, desired: {appActivity: com.bskyb.skyapp.splash.App..., appPackage: com.bskyb.skyservice, deviceName: 05534a8d0a5c92f8, platformName: android, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LGE, deviceModel: Nexus 5, deviceName: 05534a8d0a5c92f8, deviceScreenSize: 1080x1920, deviceUDID: 05534a8d0a5c92f8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 6.0.1, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 6a6956e7-e3b2-45ba-97f2-e3c0cd428630
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
 	at com.app.pages.UserSignUp.inputfield(UserSignUp.java:56)
-	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:63)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@671facee (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.bskyb.skyservice:id/signup_first_name})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anups-MacBook-Air.local&apos;, ip: &apos;2405:204:5608:baa2:350e:d484:f195:c08e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at com.app.testcases.SignInSky.inputDataToField(SignInSky.java:66)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.app.testcases.SignInSky#clickSign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

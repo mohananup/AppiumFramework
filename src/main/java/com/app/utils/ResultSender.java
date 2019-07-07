@@ -1,4 +1,4 @@
-package com.app.InfluxDB;
+package com.app.utils;
 
 import org.influxdb.InfluxDB;
 import org.influxdb.InfluxDBFactory;
